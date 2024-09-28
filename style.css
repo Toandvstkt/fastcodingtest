@@ -336,8 +336,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
-        /* Chiều cao tối thiểu của màn hình */
+        min-height: 100vh; 
     }
 
     .big-letter {
