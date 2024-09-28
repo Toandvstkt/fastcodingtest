@@ -174,7 +174,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 25%;
+        margin-left: 33%;
         margin-bottom: 15px;
     }
 
@@ -200,11 +200,12 @@
 
     .content-section {
         display: block;
+         
     }
 
     .full-screen-section .content-section {
         background-color: #212121;
-        padding: 30px;
+        padding: 10%;
         display: flex;
         flex-direction: column;
         justify-content: center;
