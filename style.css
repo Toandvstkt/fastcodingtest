@@ -1,7 +1,4 @@
     .banner {
-        color: #fff;
-        text-align: center;
-        padding: 100px 0;
         position: relative;
         height: 400px;
         display: flex;
@@ -336,7 +333,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 100vh; 
+        min-height: 100vh;
+
     }
 
     .big-letter {
@@ -457,22 +455,20 @@
     }
 
     @media (max-width: 1024px) {
-        .banner {
-            padding: 50px 0;
-            height: 300px;
-        }
-
+ 
         .banner img {
-            margin-top: 8%;
+            margin-top: -0%; 
         }
-
+        .features{
+            margin-top: 0;
+        }
         .creative-title {
             font-family: 'Gotham-Bold', sans-serif;
             color: white;
             font-weight: 700;
-            font-size: 4rem;
+            font-size: 6rem;
             position: absolute;
-            top: 45%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
@@ -481,10 +477,10 @@
         .power-text {
             font-family: 'Gotham-Medium', sans-serif;
             color: white;
-            font-size: 0.6rem;
+            font-size: 0.9rem;
             position: absolute;
             letter-spacing: 1em;
-            top: 60%;
+            top: 65%;
             left: 50%;
             color: #599dbb;
             transform: translate(-50%, -50%);
@@ -514,7 +510,7 @@
             flex-direction: column;
             align-items: center;
             position: absolute;
-            margin-top: 35%;
+            margin-top: 40%;
         }
 
         .scroll-text {
@@ -525,7 +521,7 @@
         }
 
         .transparent-header {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.1);
             border-bottom: 1px solid white;
             position: absolute;
             width: 100%;
@@ -557,7 +553,9 @@
         }
 
         .text-center-feature {
-            margin-left: 8%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
         }
 
         .features i {
@@ -567,9 +565,12 @@
             width: 10px;
             height: 10px;
             display: flex;
-            justify-content: center;
-            align-items: center;
+
             margin-bottom: 15px;
+        }
+
+        .feature-item i {
+            margin: 0 auto;
         }
 
         .footer p {
@@ -600,6 +601,117 @@
         }
     }
 
+    @media (max-width: 768px) {
+        .banner img {
+            margin-top: 0; 
+        }
+
+        .creative-title {
+            font-family: 'Gotham-Bold', sans-serif;
+            color: white;
+            font-weight: 700;
+            font-size: 5rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .power-text {
+            font-family: 'Gotham-Medium', sans-serif;
+            color: white;
+            font-size: 0.7rem;
+            position: absolute;
+            letter-spacing: 1em;
+            top: 65%;
+            left: 50%;
+            color: #599dbb;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .scroll-down {
+            font-size: 12px;
+            color: white;
+            border: solid 1px white;
+            border-radius: 50%;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+
+        .scroll-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            margin-top: 40%;
+        }
+
+        .scroll-text {
+            font-size: 12px;
+            margin-bottom: 30px;
+            color: white;
+            animation: bounce 1s infinite;
+        }
+
+        .transparent-header {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid white;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            padding: 10px;
+        }
+
+        .big-letter-w {
+            margin-top: 60%;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 10rem;
+            color: rgba(255, 252, 252, 0.2);
+            position: absolute;
+            z-index: 1;
+        }
+
+        .small-text-w {
+
+            font-family: 'Gotham-Medium', sans-serif;
+            font-weight: normal;
+            font-size: 1rem;
+            color: white;
+            position: relative;
+            z-index: 2;
+            white-space: nowrap;
+            margin-top: 60%;
+        }
+
+        .text-center-feature {
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .features i {
+            background-color: rgba(255, 253, 253, 0.1);
+            border-radius: 50%;
+            padding: 50px;
+            width: 5px;
+            height: 5px;
+            display: flex;
+            margin-bottom: 15px;
+        }
+    }
+ 
     :root {
         --primary-color: #11749e;
         --font-primary: 'Gotham-Medium', sans-serif;
