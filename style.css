@@ -247,7 +247,9 @@
         align-items: center;
         margin: 0 auto;
     }
-
+    .modal-body p{
+        margin:0 auto;
+        }
     .text-center-blog {
         font-family: 'Gotham-Book', sans-serif;
         text-align: center;
@@ -455,7 +457,7 @@
         margin-left: -60%;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1025px) {
  
         .banner img {
             margin-top: -0%; 
@@ -602,7 +604,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         .banner img {
             margin-top: 0; 
         }
@@ -711,8 +713,89 @@
             display: flex;
             margin-bottom: 15px;
         }
+         .card-body p{
+            display:none
+        }
+        .card-body h5{
+            font-size:15px
+        }
+        .modal-body p{
+        margin:0 auto;
+        }
     }
- 
+    @media (max-width: 426px) {
+        .banner img {
+            margin-top: -40%; 
+        }
+        .creative-title {
+            font-family: 'Gotham-Bold', sans-serif;
+            color: white;
+            font-weight: 700;
+            font-size: 3rem;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .power-text {
+            font-family: 'Gotham-Medium', sans-serif;
+            color: white;
+            font-size: 0.5rem;
+            position: absolute;
+            letter-spacing: 1em;
+            top: 38%;
+            left: 50%;
+            color: #599dbb;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+        .scroll-down {
+            font-size: 16px;
+            color: white;
+            border: solid 1px white;
+            border-radius: 50%;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+
+        .scroll-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            margin-top: 1%;
+        }
+
+        .scroll-text {
+            font-size: 10px;
+            margin-bottom: 30px;
+            color: white;
+            animation: bounce 1s infinite;
+        }
+        .features{
+            margin-top: -50%;
+        }
+        .text-center-feature {
+            font-size: 10px;
+        }
+        .text-center-feature h4{
+            font-size: 15px;
+        }
+        .content-section p{
+            display:none
+        }
+    }
     :root {
         --primary-color: #11749e;
         --font-primary: 'Gotham-Medium', sans-serif;
